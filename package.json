@@ -1,5 +1,6 @@
 {
   "name": "vite",
+  "homepage": "https://joshiestech.dev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,6 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "postbuild": "echo www.joshiestech.dev > dist/CNAME",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
